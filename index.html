@@ -19,14 +19,15 @@
         <img src="./img/logo.svg" alt="Логотип сайта">
       </a>
       <div class="header__nav-wrapper flex">
+        <h1>Выберите ваше приложение</h1>
         <nav class="header__nav">
           <ul class="header__list flex">
             <li class="header__item">
-              <a href="tg://resolve">Открыть Telegram</a>
+              <button onclick="openApp('tg://resolve')">Telegram</button>
             </li>
             
             <li class="header__item">
-              <a href="#about">О нас</a>
+              <button onclick="openApp('whatsapp://send')">whatsapp</button>
             </li>
             <li class="header__item">
               <a href="#stages">Этапы</a>
@@ -223,7 +224,21 @@
       </div>
     </div>
   </footer>
+  <script>
+    function openApp(scheme) {
+        const start = Date.now();
+        // Пытаемся открыть приложение
+        window.location = scheme;
 
+        // Если через 2 секунды приложение не открылось, мы можем вернуть пользователя на сайт
+        setTimeout(() => {
+            const end = Date.now();
+            if (end - start < 1500) {
+                window.location = 'https://example.com'; // Ваш сайт
+            }
+        }, 2000);
+    }
+</script>
 </body>
 
 </html>
