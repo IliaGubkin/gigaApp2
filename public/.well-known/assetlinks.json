@@ -1,0 +1,38 @@
+[
+	{
+		"relation": [
+			"delegate_permission/common.handle_all_urls"
+		],
+		"target": {
+			"namespace": "android_app",
+			"package_name": "ru.gigaapp.android",
+			"sha256_cert_fingerprints": [
+				"24:42:D6:DD:D1:7C:FD"
+			]
+		}
+	},
+	{
+		"relation": [
+			"delegate_permission/common.handle_all_urls"
+		],
+		"target": {
+			"namespace": "android_app",
+			"package_name": "ru.gigaapp.android.stage",
+			"sha256_cert_fingerprints": [
+				"E1:16:F1:C4:CC:08:0E:F5:5C:9C:8F:15:B1"
+			]
+		}
+	},
+	{
+		"relation": [
+			"delegate_permission/common.handle_all_urls"
+		],
+		"target": {
+			"namespace": "android_app",
+			"package_name": "ru.gigaapp.android.gig.ift",
+			"sha256_cert_fingerprints": [
+				"E1:16:F1:C4:CC:08:0C:9C:8F:15:B1"
+			]
+		}
+	}
+]

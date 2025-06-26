@@ -1,0 +1,15 @@
+{
+        "applinks": {
+        "apps": [],
+        "details": [
+            {
+                "appID": "giga.app",
+                "paths": ["*"]
+            },
+            {
+                "appID": "giga.app",
+                "paths": ["*"]
+            }
+        ]
+    }
+}
